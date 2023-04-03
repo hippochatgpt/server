@@ -34,7 +34,7 @@ OpenAI官方Api的Java SDK
 OpenAi官方文档地址：https://platform.openai.com/docs/api-reference
 
 # 数据库
-**chat_info表**
+## chat_info表
 CREATE TABLE `chat_info` (
 `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键ID',
 `chat_name` varchar(128) COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '会话名称',
@@ -45,7 +45,7 @@ CREATE TABLE `chat_info` (
 PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1642792108317065218 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
 
-**chat_message表**
+## chat_message表
 CREATE TABLE `chat_message` (
 `id` bigint NOT NULL AUTO_INCREMENT COMMENT '消息ID主键',
 `chat_id` bigint DEFAULT NULL COMMENT '会话ID',
@@ -57,7 +57,7 @@ CREATE TABLE `chat_message` (
 PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1642796339417591810 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
 
-**chat_user表**
+## chat_user表
 CREATE TABLE `chat_user` (
 `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键ID',
 `user_name` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '用户名称',
