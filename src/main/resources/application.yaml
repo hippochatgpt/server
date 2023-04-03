@@ -1,0 +1,24 @@
+server:
+  port: 3001 #端口号
+spring:
+  profiles:
+    active: dev
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://your datasource/chatgpt?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      username: your name
+      password: your pwd
+logging:
+  config: classpath:logback-spring.xml
+openai:
+  chat:
+    apiKeys:
+      - "**********************"
+secure:
+  ignore:
+    urls:
+      - "/user/register"
+      - "/user/login"
+      - "/v1/connect/*"
