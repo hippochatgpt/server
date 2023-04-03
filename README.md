@@ -36,14 +36,23 @@ OpenAi官方文档地址：https://platform.openai.com/docs/api-reference
 # 数据库
 ## 1、chat_info
 CREATE TABLE `chat_info` (
+
   `id` bigint NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  
   `chat_name` varchar(128) COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '会话名称',
+  
   `rm_status` tinyint DEFAULT '1' COMMENT '删除状态：0正常，1删除',
+  
   `user_id` bigint DEFAULT NULL COMMENT '用户ID',
+  
   `gmt_create` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  
   `gmt_update` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  
   PRIMARY KEY (`id`)
+  
 ) ENGINE=InnoDB AUTO_INCREMENT=1642792108317065218 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
 
 ## 2、chat_message
 CREATE TABLE `chat_message` (
