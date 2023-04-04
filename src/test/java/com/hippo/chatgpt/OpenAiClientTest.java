@@ -48,8 +48,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 描述： 测试类
  *
- * @author https:www.unfbx.com
- *  2023-02-11
+ * @author xiewei
  */
 @Slf4j
 public class OpenAiClientTest {
