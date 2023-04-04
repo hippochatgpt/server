@@ -22,8 +22,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 描述： 测试类
  *
- * @author https:www.unfbx.com
- * 2023-02-28
+ * @author xiewei
  */
 @Slf4j
 public class OpenAiStreamClientTest {
@@ -64,8 +63,6 @@ public class OpenAiStreamClientTest {
 
     @Test
     public void chatCompletions() {
-
-        String ans = "Sure, I'd be happy to chat with you in English! What would you like to talk about?";
 
         ConsoleEventSourceListener eventSourceListener = new ConsoleEventSourceListener(chatMessageService, "123456789");
         Message message = Message.builder().role(Message.Role.USER).content("我现在需要你扮演一个专业营养师，我现在需要一个月内增重五公斤，你能给我列出我接下来一个月的增重计划么？包括饮食计划，运动计划，我现在的身高体重是178CM,65KG！").build();
